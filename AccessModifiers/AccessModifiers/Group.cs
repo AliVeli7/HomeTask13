@@ -37,13 +37,13 @@ namespace AccessModifiers
         }
         public void RemoveStudent(Student student)
             {
-            int a = 0;
+            int remNum = 0;
             for (int i = 0; i < Students.Length; i++)
             {
                 if (Students[i] == student)
                 {
                     Console.WriteLine($"{student.Name} {student.SurName} Romeved ");
-                    
+                    remNum = i;
                 }
 
                 
@@ -53,11 +53,11 @@ namespace AccessModifiers
 
             for (int j = 0; j < Students.Length; j++)
             {
-                int c = j+1;
-                if (j!=a)
+                int next = j+1;
+                if (j!=remNum)
                 {
                     
-                    Students[j] = Students[c];
+                    Students[j] = Students[next];
 
                 }
                 else
