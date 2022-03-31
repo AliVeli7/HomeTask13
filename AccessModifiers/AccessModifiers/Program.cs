@@ -13,9 +13,10 @@ namespace AccessModifiers
             Student student3 = new Student(3, "Rowan", "Navarro", "Italian Language");
             Group group1 = new Group("RT100",34);
             Group group2 = new Group("MR101",25);
-            GroupManager groupManager = new GroupManager();
-            groupManager.addStudent(student1,group1);
-            groupManager.RemoveStudent(student2,group2);
+
+            group1.AddStudent(student1);
+            group1.AddStudent(student2);
+            group1.RemoveStudent(student1);
 
 
 
